@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sube tus Fotos y Videos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galería de Fotos y Videos</h1>
+    </header>
+
+    <section id="upload-section">
+        <button id="upload-button">Subir Foto/Video</button>
+        <input type="file" id="file-input" accept="image/*,video/*" style="display:none">
+    </section>
+
+    <section id="gallery">
+        <div class="gallery-item">
+            <img src="img1.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img2.jpg" alt="Imagen 2">
+        </div>
+        <!-- Agrega más imágenes o videos aquí dinámicamente -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mi Galería</p>
+    </footer>
+
+    <script src="app.js"></script>
+    
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAFXLokYnKf5yQ7DBo5Kvw2LkzvRCuWqJM",
+    authDomain: "ftkrood.firebaseapp.com",
+    projectId: "ftkrood",
+    storageBucket: "ftkrood.firebasestorage.app",
+    messagingSenderId: "273695816224",
+    appId: "1:273695816224:web:1747fd8878cd5ae2afda45",
+    measurementId: "G-WJZL6PB7Z9"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
